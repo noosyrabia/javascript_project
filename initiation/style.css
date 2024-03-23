@@ -1,0 +1,62 @@
+html{
+    font-size: 62,5%;
+     /* /1rem vaut 10px */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 1.4 rem;   
+    /* soit 14px */
+    font-family: arial;
+    color:white;
+   
+}
+    
+h1{
+    color:brown;
+    font-size: 2rem;
+}
+@keyframes rouge {
+    0%{left:0px; top:0px;}
+    25%{left:200px; top:0px;}
+    50%{left:200px; top:200px;}
+    75%{left:0px; top:200px;}
+    100%{left:0px; top:0px;}
+}
+
+
+@keyframes blue {
+    0% { left: 0px; top: 0px; }
+    25% { left: 0px; top: 200px; }
+    50% { left: 200px; top: 200px; }
+    75% { left: 200px; top: 0px; }
+    100% { left: 0px; top: 0px; }
+}
+
+
+#btn-red{
+    background-color: red;
+    min-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position:relative;
+    animation-name: rouge;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+#btn-blue{
+    background-color: blue;
+    min-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position:relative;
+    animation-name: blue;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
