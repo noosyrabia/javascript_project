@@ -1,55 +1,71 @@
-// const titre = document.getElementById('titre').style.color="green";
-
-//même résultat que le précédent mais juste découper en plusieurs étapes
-let titre = document.getElementById('titre');
-console.log(titre);
-//vérifier le contenu du code dans la console
-//Nous pouvons maintenant ajouter l'action à réaliser
-titre.style.color= "green";
-
-let test = document.getElementById('test');
-console.log(test);
-test.style.color = "red"
-
-//Je sélectionne et je stocke
+// Sélection des éléments HTML et stockage dans des variables
+const titre = document.getElementById('titre');
 const btnRed = document.getElementById('btn-red');
-console.log(btnRed, "bouton rouge");
-
-//Je sélectionne et je stocke
 const btnBlue = document.getElementById('btn-blue');
-console.log(btnBlue,"bouton bleu") ;
+const btnPink = document.getElementById('btn-pink');
+const btnReplay = document.getElementById('replay');
 
-//Pseudo-code:
-//au clique sur le cercle , javascript doit déclancher une action(incrémenter le compteur de 1)
+//modification de couleur des éléments
+titre.style.color = "green";
 
-//Je soumet l'élémént sélectionnée à une action 
-//définir l'évènement à détecter ou gérer : l'action à éxécuter c'est entre accolade dans la  function asynchrone)
-btnRed.addEventListener('click', function(){
-    console.log("cercle rouge cliqué")
-    add()
-})
 
-btnBlue.addEventListener('click', function(){
-    console.log("cercle bleu cliqué")
-    add()
-})
+// Affichage des éléments sélectionnés dans la console pour vérification
+console.log(titre, "élément titre");
+console.log(btnRed, "bouton rouge");
+console.log(btnBlue, "bouton bleu");
+console.log(btnPink, "bouton rose");
+console.log(btnReplay, "bouton rejouer");
 
+// Initialisation du compteur
 let compteur = 0;
-console.log(compteur, "compteur au démarrage"); 
-function add(){
-    compteur = compteur + 2;
+console.log(compteur, "compteur au démarrage");
+
+// Fonction pour incrémenter le compteur de 10
+function add() {
+    compteur += 10;
     console.log(compteur, "compteur après incrémentation");
-    // titre.innerText = compteur; //pour afficher le résultat dans la page
-    test.innerText = compteur + "compteur après incrémentation";
-    
+    titre.innerText = "Score :" + compteur;
 }
 
-//Pseudo-code:
-//J'incrémente le compteur : 
-//Au démaragge le compteur est à 0 
-//Au clic il est incrémenté à 1 
-//Au clic sur le compteur rouge ou bleu le compteur augmente de 1
+// Fonction pour décrémenter le compteur de 10 si celui-ci est supérieur à 0
+function substract() {
+    if(compteur > 0){
+        compteur -= 10;
+        console.log(compteur, "compteur après décrémentation");
+        titre.innerText = 'Score :' + compteur}
+    else{ compteur = 0}
+}
 
+//Fonction pour rafraichir la page 
+function reload(){
+    location.reload()
+}
 
+// Événements au clic sur les boutons pour appeler les fonctions
+btnRed.addEventListener('click', function() {
+    console.log("cercle rouge cliqué");
+    add();
+});
 
+btnBlue.addEventListener('click', function() {
+    console.log("cercle bleu cliqué");
+    add();
+});
 
+btnPink.addEventListener('click', function() {
+    console.log("cercle rose cliqué");
+    substract();
+});
+
+btnReplay.addEventListener( 'click', function(){
+    console.log("bouton rejouer");
+   reload();
+})
+
+// Suppression des cercles après 30 secondes
+setTimeout(function() {
+    console.log("Fin du chrono !");
+    btnRed.remove();
+    btnBlue.remove();
+    btnPink.remove();
+}, 30000);

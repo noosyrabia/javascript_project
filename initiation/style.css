@@ -1,35 +1,36 @@
-html{
-    font-size: 62,5%;
-     /* /1rem vaut 10px */
+html {
+    font-size: 62.5%;
+    /* 1rem vaut 10px */
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
-body{
-    font-size: 1.4 rem;   
+
+body {
+    font-size: 1.4rem;
     /* soit 14px */
-    font-family: arial;
-    color:white;
-   
+    font-family: Arial, sans-serif;
+    color: white;
 }
-    
-h1{
-    color:brown;
-    font-size: 2rem;
+
+h1 {
+    color: brown;
+    font-size: 3rem;
 }
+
 @keyframes rouge {
-    0%{left:0px; top:0px;}
-    25%{left:200px; top:0px;}
-    50%{left:200px; top:200px;}
-    75%{left:0px; top:200px;}
-    100%{left:0px; top:0px;}
+    0% { left: 0px; top: 0px; }
+    25% { left: 200px; top: 0px; }
+    50% { left: 200px; top: 200px; }
+    75% { left: 0px; top: 200px; }
+    100% { left: 0px; top: 0px; }
 }
 
-
-@keyframes blue {
+@keyframes bleue {
     0% { left: 0px; top: 0px; }
     25% { left: 0px; top: 200px; }
     50% { left: 200px; top: 200px; }
@@ -37,30 +38,43 @@ h1{
     100% { left: 0px; top: 0px; }
 }
 
+@keyframes pink {
+    0% { left: 0px; top: 0px; }
+    25% { left: 200px; top: 0px; }
+    50% { left: 200px; top: 200px; }
+    75% { left: 0px; top: 200px; }
+    100% { left: 0px; top: 0px; }
+}
 
-#btn-red{
+#btn-red {
     background-color: red;
     min-height: 50px;
     width: 50px;
     border-radius: 50%;
-    position:relative;
-    animation-name: rouge;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
+    position: relative;
+    animation: rouge 10s infinite;
 }
 
-
-#btn-blue{
+#btn-blue {
     background-color: blue;
     min-height: 50px;
     width: 50px;
     border-radius: 50%;
-    position:relative;
-    animation-name: blue;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
+    position: relative;
+    animation: bleue 10s infinite;
 }
 
-h2{
-    color: black;
+#btn-pink {
+    background-color: pink;
+    min-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    animation: pink 20s infinite;
+}
+
+#replay{
+    padding: 10px;
+    margin: 10px;
+    font-size: 2rem;
 }
