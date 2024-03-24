@@ -1,0 +1,5 @@
+##J'alterne les états
+Découvrez comment modifier le style d’un élément et revenir à l’état initial.
+je plave les éléments html 
+j'apporte le style avec css
+je fais disparaitre la bannière au clic avec js
