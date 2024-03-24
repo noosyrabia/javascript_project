@@ -6,8 +6,10 @@ console.log(titre);
 //vérifier le contenu du code dans la console
 //Nous pouvons maintenant ajouter l'action à réaliser
 titre.style.color= "green";
-titre = 2;
-console.log(titre);//renvoie 2
+
+let test = document.getElementById('test');
+console.log(test);
+test.style.color = "red"
 
 //Je sélectionne et je stocke
 const btnRed = document.getElementById('btn-red');
@@ -24,17 +26,23 @@ console.log(btnBlue,"bouton bleu") ;
 //définir l'évènement à détecter ou gérer : l'action à éxécuter c'est entre accolade dans la  function asynchrone)
 btnRed.addEventListener('click', function(){
     console.log("cercle rouge cliqué")
-    compteur = compteur + 1;
-    console.log(compteur, "compteur après incrémentation")
+    add()
 })
-let compteur = 0;
-console.log(compteur, "compteur au démarrage"); 
-s
+
 btnBlue.addEventListener('click', function(){
     console.log("cercle bleu cliqué")
-    compteur = compteur + 1;
-    console.log(compteur, "compteur après incrémentation")
+    add()
 })
+
+let compteur = 0;
+console.log(compteur, "compteur au démarrage"); 
+function add(){
+    compteur = compteur + 2;
+    console.log(compteur, "compteur après incrémentation");
+    // titre.innerText = compteur; //pour afficher le résultat dans la page
+    test.innerText = compteur + "compteur après incrémentation";
+    
+}
 
 //Pseudo-code:
 //J'incrémente le compteur : 
