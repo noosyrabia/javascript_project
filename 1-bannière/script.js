@@ -7,7 +7,7 @@ console.log("connecté !");
 //Je séléctionne, je stocke 
 //bouton .btn-success
 const btnSuccess = document.querySelector('.btn-success');
-console.log(btnSuccess); //On.qaffiche l'objet dans la console pour vérifier qu'il est bien chargé et que tout fonctionne
+console.log(btnSuccess); //On affiche l'objet dans la console pour vérifier qu'il est bien chargé et que tout fonctionne
 
 //DIV cookies
 const cookies = document.querySelector('.cookies');
