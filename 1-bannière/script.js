@@ -5,7 +5,7 @@ console.log("connecté !");
 //Appliquer la règle de 3 s : je séléctionne , je stocke , je soumet une action
 
 //Je séléctionne, je stocke 
-//bouton .btn-success
+//bouton .btn-success 
 const btnSuccess = document.querySelector('.btn-success');
 console.log(btnSuccess); //On affiche l'objet dans la console pour vérifier qu'il est bien chargé et que tout fonctionne
 
