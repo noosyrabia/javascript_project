@@ -13,14 +13,27 @@ console.log("connecté !")
 const icone = document.querySelector('i');
 console.log(icone);
 
+const btnButton = document.querySelector('.btn');
+console.log(btnButton);
+
 //Je soumet l'icone à une action au clic 
 icone.addEventListener('click', function(){
     console.log("icône cliqué !");
-    if(icone.style.color === "yellow"){
-        icone.style.color= "";
-    }
-    else{ icone.style.color = "yellow"};
+    // if(icone.style.color === "yellow"){
+    //     icone.style.color= "";
+    // }
+    // else{ icone.style.color = "yellow"};//autre option utiliser les classses pour alterner
+
     icone.classList.toggle("fa-face-smile");
+    icone.classList.toggle("happy")
+
+})
+
+//Je soumet le bouton à une action au clic 
+
+btnButton.addEventListener('click', function(){
+    console.log("bouton cliqué"); 
+    btnButton.innerText = ' Abonnez';
 
 })
 
