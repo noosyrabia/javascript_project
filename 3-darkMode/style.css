@@ -17,8 +17,13 @@ body{
 }
     
 h1{
-    color:brown;
+    color:rgb(246, 246, 246);
     font-size: 1rem;
+    position: absolute; /* Position absolue par rapport à son parent */
+    top: 40%; /* Aligner le titre en haut */
+    left: 46%; /* Aligner le titre à gauche */
+    margin: 10px; /* Ajouter une marge pour l'espace */
+    
 }
 .container{
     height: 100vh;
@@ -26,6 +31,85 @@ h1{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #1e2337 ;
+    background-color: #61b3ff ;
+    border:#61b3ff;
+     /* //nouvelle couleur de fond  */
+     position: relative;
 }
 
+.switch{
+    width: 90px;
+    height: 30px;
+    background-color: #19716a;
+    border-radius: 15px;
+    position: absolute;
+    border : 1px solid #19716a;
+    padding: 1rem;
+}
+
+.btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: -1px; 
+    /* bottom: 1px; */
+    left: -1px;
+
+}
+
+.switch i {
+    position:absolute;
+    color: #ffd363;
+    top: 6px;
+    right: 23px;
+}
+
+.btn-change{
+    right: -1px;
+    left: auto;
+
+}
+
+.icone-change{
+    left: 20px;
+    right: auto;
+}
+
+.switch-change{
+      background-color: #1e2939;
+      border:#1e2939;
+}
+
+.container-change{
+    background-color: #2C3C54 ;
+    border:#2C3C54  ;
+}
+
+button {
+    background-color: #4CAF50; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Remplissage intérieur */
+    font-size: 10px; /* Taille de la police */
+    border: none; /* Pas de bordure */
+    border-radius: 10px; /* Coins arrondis */
+    cursor: pointer; /* Curseur pointeur au survol */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    transition: background-color 0.3s, color 0.3s; /* Transition fluide */
+}
+
+button:hover {
+    background-color: #45a049; /* Changement de couleur de fond au survol */
+    
+}
+
+button:focus {
+    outline: none; /* Supprimer la bordure de focus */
+}
+
+button.plus,
+button.minus {
+    /* Votre style existant */
+    margin-top: 90px; /* Déplacer les boutons de 10 pixels vers le bas */
+}
