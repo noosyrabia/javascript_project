@@ -33,7 +33,14 @@ icone.addEventListener('click', function(){
 
 btnButton.addEventListener('click', function(){
     console.log("bouton cliqué"); 
-    btnButton.innerText = ' Abonnez';
+    if(btnButton.innerText === "Abonné"){
+        btnButton.innerText = "Abonnez-vous"
+    }
+    else{
+        btnButton.innerText = 'Abonné'
+    }
+    btnButton.classList.toggle('abonne')
+
 
 })
 
