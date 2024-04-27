@@ -8,7 +8,7 @@ console.log("connecté !");
 //La div container change de couleur au fond, 
 //Le titre change
 
-// Ce pseudo-code repose sur la méthode de 3 S et nous permet d'identifier tout les élémentd dont on a besoin on javascript
+// Ce pseudo-code repose sur la méthode de 3 S et nous permet d'identifier tout les éléments dont on a besoin en javascript
 //S = Selectionner
 //S = Stocker
 //S = Soumettre à une action 
@@ -19,11 +19,11 @@ console.log("connecté !");
  const switchBox = document.querySelector('.switch'); 
  console.log(switchBox); 
 
-// Je sélectionne et je stocke le cercle
+// Je sélectionne et je stocke le cercle button
 const cercleBtn = document.querySelector('.btn')
 console.log(cercleBtn);
 
-// Je sélectionne et je stocke l'icône 
+// Je sélectionne et je stocke l'icône iframe
 const icone = document.querySelector('i');
 console.log(icone);
 
@@ -36,7 +36,7 @@ const titre = document.querySelector('h1');
 console.log(titre)
 
 //Je soumets les éléments stocker à une action 
-//Au clic à la div switch une suite d'action va s'éxécuter
+//Au clic à la div switch, une suite d'action va s'éxécuter
 switchBox.addEventListener('click', function(){
     console.log("DIV cliquée !");
     cercleBtn.classList.toggle('btn-change');
