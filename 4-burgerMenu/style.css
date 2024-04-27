@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Quicksand:wght@300..700&display=swap');  
+
 html{
     font-size: 62,5%;
      /* /1rem vaut 10px */
@@ -11,7 +13,7 @@ html{
 body{
     font-size: 1.4 rem;   
     /* soit 14px */
-    font-family: arial;
+    font-family: 'Quicksand', sans-serif;
     color:white;
    
 }
@@ -31,3 +33,86 @@ h1{
     
 }
 
+/* STYLE MENU DESKTOP */
+
+.navbar-desktop{
+    height: 8rem;
+    line-height: 8 rem;
+    text-align: center;
+}
+
+.navbar-desktop a {
+    padding: 4rem;/*ajouter un espace entre chaque lien */
+}
+
+/* STYLE MENU MOBILE  */
+.navbar-mobile{
+    position: fixed;
+    top: 9px;
+    right: 15px;
+    font-size: 3rem;
+    /* color: red; */
+    display:none;
+}
+
+.navbar-mobile .modal {
+    background-color: fuchsia;
+    height: 100vh;
+    position:fixed;
+    top:-100vh;
+    left: 0px;
+    width: 100%;
+    opacity: 0,9;
+
+}
+
+.navbar-mobile .navbar-mobile-list{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-mobile .navbar-mobile-list a{
+    font-size: 5rem;
+    font-weight: 800;
+    color:#1e2337;
+    padding: 2 rem
+}
+
+.navbar-mobile i{
+    position: fixed;
+    z-index: 9999;
+    top:9px;
+    right: 15px;
+    font-size: 3rem;
+    color:aliceblue;
+
+}
+
+.navbar-mobile .navbar-mobile-list a:hover{
+    color: #0931d1;
+    transition: 2ms;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 700px) {
+    .navbar-desktop{
+        display: none
+    }
+    
+    .navbar-mobile{
+        display: block;
+    }
+}
+
+/* action au clic de l'icone menu burger */
+.change-modal {
+       top:0vh;
+       transition: 3s;
+       background-color: fuchsia;
+       height: 100vh;
+       display:block;
+}
