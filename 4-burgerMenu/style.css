@@ -108,7 +108,7 @@ h1{
     }
 }
 
-/* action au clic de l'icone menu burger */
+/* STYLE au clic de l'icone menu burger */
 .change-modal {
        top:0vh;
        transition: 3s;
