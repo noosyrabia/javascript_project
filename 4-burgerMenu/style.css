@@ -55,8 +55,9 @@ h1{
     display:none;
 }
 
-.navbar-mobile .modal {
+.modal {
     background-color: fuchsia;
+    font-size:10px;
     height: 100vh;
     position:fixed;
     top:-100vh;
@@ -107,12 +108,15 @@ h1{
         display: block;
     }
 }
+.navbar-mobile .navbar-mobile-list a{
+    font-size: 30px;
+} 
 
 /* STYLE au clic de l'icone menu burger */
 .change-modal {
        top:0vh;
-       transition: 3s;
-       background-color: fuchsia;
        height: 100vh;
+       transition: 0.5s;
+       background-color: fuchsia;
        display:block;
 }
