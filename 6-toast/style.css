@@ -1,0 +1,65 @@
+html{
+    font-size: 62,5%;
+     /* /1rem vaut 10px */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 1.4 rem;   
+    /* soit 14px */
+    font-family: arial;
+    color:#777;
+   
+}
+    
+h1{
+    color:brown;
+    font-size: 1rem;
+    
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eee ;
+    
+}
+.btn{
+    border: none;
+    color: white;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: green;
+    border-radius:2px;
+    cursor: pointer;
+    
+}
+
+.container-notifications{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    /* background-color: aqua; */
+    margin: 3rem;
+    padding: 10px;
+    font-size: 1.2rem;
+    color:red;
+
+}
+
+.btn:hover{
+    opacity:0.9;
+}
+.toast{
+    padding: 1rem;
+    margin: 0,7 rem;
+    border: 1 px solid rgb(181, 181, 181); 
+    border-left: 3px solid green;
+    border-radius: 3px;
+}
