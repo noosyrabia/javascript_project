@@ -27,7 +27,29 @@ h1{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #1e2337 ;
+    background-color: #b0d092fe ;
     
 }
 
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid #777;
+}
+
+.réponse{
+    color:#777;
+    background-color: #eee;
+    padding: 3rem;
+    display: none;
+}
+
+.visible{
+    display: block
+}
+
+.question i{
+    margin-left: 2rem;
+}
