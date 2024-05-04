@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiche produit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" >
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <h1>Fiche Produit</h1>
+
+        <div class="produit-container">
+
+            <div class="produit-images">
+                
+                <!-- image grand format -->
+                <div class="full-img-container">
+                    <img id="full"src="./images/img1.jpg" alt="chaise scandinave"/>
+                </div>
+
+                <div class="vignettes-container">
+                    <!-- image petit format -->
+                    <img class="small" src ="./images/img1.jpg" alt="chaise scandinave"/>
+                    <img class="small"src="./images/img2.jpg" alt="chaise scandinave"/>
+                    <img class="small" src="./images/img3.jpg" alt="chaise scandinave"/>
+                </div>
+            </div>
+            <div class="produit-infos">
+
+                <h1 class="produit-titre">
+                     Chaise Scandinave
+                </h1>
+
+                <p class="produit-prix">
+                    99€
+                </p>
+
+                <p class="produit-description">
+                     Installer vous dans le modèle emblématique imaginé par Charles
+                    et Ray Eemes pour un concours organisé par le musée d'art moderne de New York
+                </p>
+
+                <button class="btn-add" title="boutton">
+                    <i class="fas fa-shopping-basket"></i>
+                    Ajouter au panier
+                </button>
+                
+                <p class="panier-container"></p>
+                
+            </div>
+        </div>
+</div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

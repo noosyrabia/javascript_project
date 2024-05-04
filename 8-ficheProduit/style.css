@@ -1,0 +1,119 @@
+html{
+    font-size: 62,5%;
+     /* /1rem vaut 10px */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 1.4 rem;   
+    /* soit 14px */
+    font-family: arial;
+    color:rgb(255, 255, 255);
+   
+}
+    
+h1{
+    color:brown;
+    font-size: 1rem;
+    
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1e2337 ;
+    
+}
+
+/* FICHE PRODUIT */
+.produit-container{
+    display:flex;
+    width:80% ;
+    background-color: White;
+    color: grey;
+}
+/* IMAGES PRODUITS A GAUCHE  */
+.produit-images{
+    flex: 1;
+}
+
+/* INFO PRODUITS A DROITE */
+.produit-infos{
+    flex: 1;
+    padding: 2rem
+}
+
+h1.produit-titre{
+    font-size: 4rem;
+}
+p.produit-prix{
+    font-size: 3rem;
+    margin: 2rem 0; 
+}
+p.description{
+    font-size: 2rem;
+    margin: 2rem 0; 
+}
+/* L'image de dépasse pas son contenant */
+.full-img-container{
+    height: 350px;
+    overflow: hidden;
+}
+
+/* L'image est complèteme,nt visible dans sa largeur */
+#full{
+    width: 100%;
+}
+.vignettes-container{
+    display: flex;
+}
+.small{
+    flex: 1;
+    width: 30%;
+    margin: 1rem;
+    cursor: pointer;
+}
+.small:hover{
+    opacity: 0.9;
+}
+button.btn-add{
+    background-color: black;
+    color: aliceblue;
+    padding: 2rem;
+    outline:none;
+    border: none; 
+    margin: 2rem 0;
+    cursor: pointer;
+}
+button.btn-add:hover {
+    opacity: 0.8;
+}
+
+
+/* Version mobile : pour les écrans en dessous de 800 pixels */
+@media screen and (max-width: 800px){
+    .container{
+        height: auto;/*annule la hauteur 100vh*/
+
+    }
+    .produit-container{
+        flex-direction: column;
+    }
+    .full-img-container{
+        height:aurto ;/*annule le height 350pixels*/
+    }
+    .small{
+        width: 50%;
+    }
+    .vignettes-container{
+        flex-direction:column ;
+        width: 100%;
+        align-items: center;
+    }
+}
