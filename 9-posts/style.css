@@ -1,0 +1,53 @@
+html{
+    font-size: 62,5%;
+     /* /1rem vaut 10px */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 1.4 rem;   
+    /* soit 14px */
+    font-family: arial;
+    color:rgb(255, 255, 255);
+   
+}
+    
+h1{
+    color:rgb(15, 12, 12);
+    font-size: 2rem;
+    
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d2d2d0 ;
+    
+}
+
+.post-titre{
+
+    font-size: 2rem;
+    color:orangered;
+}
+.post-extrait{
+    font-size: 1rem;
+    color: black;
+    
+}
+
+.post-hashtag{
+    font-weight: 500;
+    color: black;
+    
+}
+
+.posts{
+    background-color: rgb(142, 192, 175);
+}
